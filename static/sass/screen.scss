@@ -1,0 +1,85 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/css3/text-shadow";
+@import "compass/css3/user-interface";
+
+body {
+	background-image: url(../images/bg.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+.main-container {
+	$width: 640px;
+	$height: 400px;
+	position: absolute;
+	width: $width;
+	height: $height;
+	top: 50%;
+	left: 50%;
+	margin-left: -$width/2;
+	margin-top: -$height/2;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+	@include border-radius(10px);
+	background-color: rgba(0,0,0,.3);
+}
+
+.main {
+	.head {
+		margin: 10px auto;
+
+		p {
+			color: #FEFEFE;
+			font-size: 1em;
+			@include text-shadow(1px 1px 0 rgba(0,0,0,.3));
+		}
+	}
+}
+
+#count {
+	padding: 10px;
+	font-size: 70px;
+	color: #E75297;
+	font-family: 'Nunito', sans-serif;
+	@include text-shadow(#fff 1px 1px 0px, #fff -1px 1px 0px, #fff 1px -1px 0px, #fff -1px -1px 0px);
+}
+
+#nyanpasu {
+	display: inline-block;
+	line-height: 1;
+	font-size: 50px;
+	text-indent: 0.1em;
+	background: #C8C0DA;
+	color: #796BAE;
+	padding: 20px;
+	border-radius: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+	@include user-select(none);
+}
+
+.redirect{
+	margin: 50px auto 0;
+	a {
+		color: #FEFEFE;
+		background: #99CC00;
+		padding: 10px;
+		border-radius: 10px;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "nyanpasu",
+  "version": "0.0.1",
+  "description": "nyanpasu!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "ioredis": "^1.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "node-sass-middleware": "0.8.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-uglify": "^1.5.1"
+  },
+  "keywords": [
+    "nyanpasu"
+  ],
+  "author": "Hakurouken",
+  "license": "MIT"
+}
